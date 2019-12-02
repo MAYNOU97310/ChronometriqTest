@@ -1,0 +1,29 @@
+.add-btn {
+    
+    margin-left: 0.25rem;
+    margin-bottom: 1rem;
+    float: right;
+    margin: 0 auto;
+    margin-bottom: 1px;
+}
+
+.closeBtn {
+    float: right;
+    min-height: 0px !important;
+    background: #f45c40;
+    color: white;
+    
+
+}
+
+.closeBtn:focus {
+    outline: 0px!important;
+}
+
+.row {
+    margin-left: 0px!important;
+}
+
+.submitRow {
+    display: flex;
+}

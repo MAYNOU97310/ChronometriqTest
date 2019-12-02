@@ -1,0 +1,37 @@
+<div>
+  <button class="closeBtn" mat-raised-button [mat-dialog-close]="true">CLOSE</button>
+  <h2 mat-dialog-title>New Staff</h2>
+
+
+  <mat-dialog-content>
+    <form [formGroup]="bioSection" (ngSubmit)="createStaff()">
+      <div class="row">
+        First Name:
+      </div>
+      <div class="row">
+          <input type="text" formControlName="firstName">
+      </div>
+
+      <div class="row">
+          Last Name:
+        </div>
+        <div class="row">
+            <input type="text" formControlName="lastName">
+          </div>
+      <div class="row">
+        Group
+      </div>
+      <div class="row">
+          <select formControlName="group" matNativeControl required>
+              <option value="nurse">Nurse</option>
+              <option value="doctor">Doctor</option>
+              <option value="admin">Admin</option>
+            </select>
+      </div>
+      <div class="row submitRow">
+          <button mat-raised-button type="submit" class="add-btn">SUBMIT</button>
+      </div>
+    </form>
+  </mat-dialog-content>
+
+</div>

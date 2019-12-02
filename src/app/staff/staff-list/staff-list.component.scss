@@ -1,0 +1,16 @@
+.staff-card {
+    margin: 0.25rem;
+}
+
+.initials {
+    border-radius: 50%;
+    background-color: #f45c40;
+    text-align: center;
+    display: flex;
+    span {
+        margin: auto;
+        font-weight: bold;
+        color: white;
+    }
+
+}

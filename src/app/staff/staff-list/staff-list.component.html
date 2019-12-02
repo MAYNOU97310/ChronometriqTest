@@ -1,0 +1,22 @@
+<!-- The most beautiful design -->
+  <mat-card class="staff-card" *ngIf="isBeautifull">
+    <mat-card-header>
+      <div mat-card-avatar class="initials"><span>{{getInitials()}}</span></div>
+      <mat-card-title>{{staff.firstName}} {{staff.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{staff.group}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        n° : {{staff.id}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+<!-- The Other Design (Two columns card)  -->
+<div *ngIf="!isBeautifull">
+    n° : {{staff.id}}
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>Last Name : {{staff.lastName}} <br>First Name : {{staff.firstName}}</mat-grid-tile>
+      <mat-grid-tile>Group : {{staff.group}}</mat-grid-tile>
+    </mat-grid-list>
+</div>

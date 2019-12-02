@@ -1,0 +1,9 @@
+<button mat-raised-button (click)="showDialog()" class="add-btn">Create</button>
+
+<div class="row">
+  <div class="col-xl-6"  *ngFor="let staff of staffs">
+      <app-staff-list [staff]="staff" [isBeautifull]="isBeautifull"></app-staff-list>
+  </div>
+</div>
+<!-- Switch between theMostBeautifulDesign and theOtherDesign -->
+<button mat-raised-button (click)="switchDisplay()" class="add-btn">SWITCH DISPLAY</button>
